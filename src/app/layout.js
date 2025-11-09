@@ -3,6 +3,7 @@ import Providers from "./providers";
 import SiteLayout from "@/components/layout/SiteLayout";
 import { Poppins } from "next/font/google";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
           <ScrollToTop />
           <SiteLayout>{children}</SiteLayout>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
