@@ -16,8 +16,8 @@ const quickLinks = [
 ];
 
 const resources = [
-  { label: "Privacy Policy", href: "https://www.sotowebstudios.com/privacy-policy" },
-  { label: "Terms of Service", href: "https://www.sotowebstudios.com/terms-of-service" },
+  { label: "Privacy Policy", href: "https://www.sotowebstudios.com/privacy" },
+  { label: "Terms of Service", href: "https://www.sotowebstudios.com/terms" },
   { label: "Contact", href: "https://www.sotowebstudios.com/contact" },
 ];
 
@@ -40,8 +40,7 @@ export default function AppFooter() {
                 Soto Web Studios
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 320 }}>
-                Building modern, AI-integrated web experiences with a focus on speed,
-                polish, and measurable results.
+                Building modern AI-integrated web applications with cutting-edge technology and exceptional design.
               </Typography>
             </Grid>
             <Grid size={{ xs: 6, md: 4 }}>
