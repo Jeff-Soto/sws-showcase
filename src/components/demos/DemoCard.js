@@ -73,7 +73,13 @@ export default function DemoCard({ demo }) {
         ))}
       </Stack>
 
-      <GradientButton href={`/demos/${demo.slug}`} sx={{ mt: "auto", alignSelf: "flex-start" }}>
+      <GradientButton 
+        onClick={() => {
+          window.location.href = `/demos/${demo.slug}`;
+        }}
+        href={`/demos/${demo.slug}`} 
+        sx={{ mt: "auto", alignSelf: "flex-start" }}
+      >
         View Demo
       </GradientButton>
     </Box>

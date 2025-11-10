@@ -105,7 +105,7 @@ export default function AppHeader() {
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ py: 1, px: { xs: 2, sm: 3, md: 4 } }}>
             <Link
-              href="/"
+              href="https://www.sotowebstudios.com"
               style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
             >
               <Image
