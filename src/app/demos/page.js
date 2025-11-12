@@ -81,7 +81,6 @@ export default function DemosOverviewPage() {
         </Typography>
         <GradientButton
           href="https://www.sotowebstudios.com/contact"
-          target="_blank"
           rel="noreferrer"
         >
           Discuss Your Use Case

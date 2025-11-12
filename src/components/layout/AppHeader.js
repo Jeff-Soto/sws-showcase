@@ -75,7 +75,6 @@ export default function AppHeader() {
           fullWidth
           component={Link}
           href="https://www.sotowebstudios.com/contact"
-          target="_blank"
           rel="noreferrer"
           sx={{
             borderRadius: 999,
@@ -179,7 +178,6 @@ export default function AppHeader() {
               <Button
                 component={Link}
                 href="https://www.sotowebstudios.com/contact"
-                target="_blank"
                 rel="noreferrer"
                 sx={{
                   borderRadius: 999,
