@@ -47,6 +47,38 @@ export const demos = [
     highlights: ["Prompting UI", "Image gallery", "Style presets"],
     tech: ["Next.js", "OpenAI Images", "MUI"],
   },
+  {
+    slug: "ai-meeting-assistant",
+    title: "AI Meeting Assistant",
+    description:
+      "Process meeting transcripts, extract action items, generate summaries, and create follow-up tasks—all powered by AI.",
+    highlights: ["Transcript processing", "Action items", "Meeting summaries"],
+    tech: ["Next.js", "OpenAI", "MUI"],
+  },
+  {
+    slug: "ai-seo-optimizer",
+    title: "AI SEO Content Optimizer",
+    description:
+      "Optimize your content for search engines with AI-powered keyword analysis, meta tag generation, and SEO recommendations.",
+    highlights: ["Keyword optimization", "Meta tag generation", "SEO insights"],
+    tech: ["Next.js", "OpenAI", "MUI"],
+  },
+  {
+    slug: "ai-invoice-assistant",
+    title: "AI Invoice & Expense Assistant",
+    description:
+      "Generate professional invoices, categorize expenses automatically, and get financial summaries tailored for small businesses.",
+    highlights: ["Invoice generation", "Expense categorization", "Financial summaries"],
+    tech: ["Next.js", "OpenAI", "MUI"],
+  },
+  {
+    slug: "ai-proposal-generator",
+    title: "AI Proposal Generator",
+    description:
+      "Create winning client proposals, generate accurate quotes, and customize contract templates with AI assistance.",
+    highlights: ["Proposal templates", "Quote generation", "Contract customization"],
+    tech: ["Next.js", "OpenAI", "MUI"],
+  },
 ];
 
 export const stackBadges = [

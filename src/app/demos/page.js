@@ -11,8 +11,8 @@ import GradientButton from "@/components/common/GradientButton";
 const demoCategories = [
   {
     label: "Content & Marketing",
-    slugs: ["ai-content-generator"],
-    description: "Campaign ideation, tone control, and on-brand copy generation.",
+    slugs: ["ai-content-generator", "ai-seo-optimizer"],
+    description: "Campaign ideation, tone control, on-brand copy generation, and SEO optimization.",
   },
   {
     label: "Analytics & Insights",
@@ -28,6 +28,21 @@ const demoCategories = [
     label: "Operations & Assets",
     slugs: ["document-analysis", "ai-asset-studio"],
     description: "Document intelligence and AI-generated creative assets.",
+  },
+  {
+    label: "Productivity & Collaboration",
+    slugs: ["ai-meeting-assistant"],
+    description: "Meeting transcription, action item extraction, and follow-up task creation.",
+  },
+  {
+    label: "Financial Management",
+    slugs: ["ai-invoice-assistant"],
+    description: "Invoice generation, expense categorization, and financial insights for small businesses.",
+  },
+  {
+    label: "Sales & Business Development",
+    slugs: ["ai-proposal-generator"],
+    description: "Client proposal generation, quote creation, and contract customization.",
   },
 ];
 
