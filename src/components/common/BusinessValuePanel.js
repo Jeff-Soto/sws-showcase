@@ -66,14 +66,21 @@ export default function BusinessValuePanel({ demo }) {
             </Typography>
             <Stack spacing={1}>
               {demo.keyBenefits.map((benefit, idx) => (
-                <Stack key={idx} direction="row" spacing={1.5} alignItems="flex-start">
+                <Box
+                  key={idx}
+                  sx={{
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: 1.5,
+                  }}
+                >
                   <Box
                     sx={{
                       width: 6,
                       height: 6,
                       borderRadius: "50%",
                       background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
-                      mt: 0.35,
+                      mt: "0.5em",
                       flexShrink: 0,
                     }}
                   />
@@ -82,11 +89,14 @@ export default function BusinessValuePanel({ demo }) {
                     sx={{
                       color: "text.secondary",
                       lineHeight: 1.5,
+                      flex: 1,
+                      pt: 0,
+                      mt: 0,
                     }}
                   >
                     {benefit}
                   </Typography>
-                </Stack>
+                </Box>
               ))}
             </Stack>
           </Box>
@@ -190,14 +200,21 @@ export default function BusinessValuePanel({ demo }) {
               <AccordionDetails sx={{ px: 2, py: 2 }}>
                 <Stack spacing={1}>
                   {demo.useCases.map((useCase, idx) => (
-                    <Stack key={idx} direction="row" spacing={1.5} alignItems="flex-start">
+                    <Box
+                      key={idx}
+                      sx={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        gap: 1.5,
+                      }}
+                    >
                       <Box
                         sx={{
                           width: 6,
                           height: 6,
                           borderRadius: "50%",
                           background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
-                          mt: 0.35,
+                          mt: "0.4em",
                           flexShrink: 0,
                         }}
                       />
@@ -206,11 +223,14 @@ export default function BusinessValuePanel({ demo }) {
                         sx={{
                           color: "text.secondary",
                           lineHeight: 1.5,
+                          flex: 1,
+                          pt: 0,
+                          mt: 0,
                         }}
                       >
                         {useCase}
                       </Typography>
-                    </Stack>
+                    </Box>
                   ))}
                 </Stack>
               </AccordionDetails>

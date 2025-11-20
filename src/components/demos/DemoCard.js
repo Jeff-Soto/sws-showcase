@@ -70,14 +70,21 @@ export default function DemoCard({ demo }) {
           {demo.keyBenefits && demo.keyBenefits.length > 0 && (
             <Stack spacing={0.5}>
               {demo.keyBenefits.slice(0, 2).map((benefit, idx) => (
-                <Stack key={idx} direction="row" spacing={1} alignItems="flex-start">
+                <Box
+                  key={idx}
+                  sx={{
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: 1,
+                  }}
+                >
                   <Box
                     sx={{
                       width: 6,
                       height: 6,
                       borderRadius: "50%",
                       background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
-                      mt: 0.35,
+                      mt: "0.4em",
                       flexShrink: 0,
                     }}
                   />
@@ -87,11 +94,14 @@ export default function DemoCard({ demo }) {
                       color: "text.secondary", 
                       fontSize: "0.8125rem",
                       lineHeight: 1.5,
+                      flex: 1,
+                      pt: 0,
+                      mt: 0,
                     }}
                   >
                     {benefit}
                   </Typography>
-                </Stack>
+                </Box>
               ))}
             </Stack>
           )}
@@ -153,25 +163,37 @@ export default function DemoCard({ demo }) {
 
       <Stack spacing={1}>
         {demo.highlights.map((item) => (
-          <Stack key={item} direction="row" spacing={1} alignItems="flex-start">
+          <Box
+            key={item}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              gap: 1,
+            }}
+          >
             <Box
               sx={{
                 width: 8,
                 height: 8,
                 borderRadius: "50%",
                 background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
-                mt: 0.4,
+                mt: "0.4em",
                 flexShrink: 0,
               }}
             />
             <Typography 
               variant="body2" 
               color="text.secondary"
-              sx={{ lineHeight: 1.5 }}
+              sx={{ 
+                lineHeight: 1.5,
+                flex: 1,
+                pt: 0,
+                mt: 0,
+              }}
             >
               {item}
             </Typography>
-          </Stack>
+          </Box>
         ))}
       </Stack>
 
