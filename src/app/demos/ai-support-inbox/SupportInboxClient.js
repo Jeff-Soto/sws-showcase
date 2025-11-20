@@ -273,8 +273,8 @@ export default function SupportInboxClient() {
                   value={draftReply}
                   onChange={(event) => setDraftReply(event.target.value)}
                   placeholder="Generate a reply or start typing..."
-                  autoFocus
                   InputLabelProps={{
+                    shrink: true,
                     sx: {
                       color: "primary.light",
                     },
@@ -283,8 +283,9 @@ export default function SupportInboxClient() {
                     sx: {
                       borderRadius: "18px",
                       "& .MuiOutlinedInput-notchedOutline": {
-                        borderColor: "rgba(201,160,63,0.55)",
+                        borderColor: "rgba(201,160,63,0.85)",
                         borderRadius: "18px",
+                        boxShadow: `0 0 0 2px rgba(201,160,63,0.25)`,
                       },
                       "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
                         borderColor: "rgba(201,160,63,0.85)",
