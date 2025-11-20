@@ -1,0 +1,310 @@
+[{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb07"
+  },
+  "title": "AI Content Generator",
+  "slug": "ai-content-generator",
+  "summary": "Generate marketing-ready copy with tone and format controls. OpenAI-powered demo for Soto Web Studios.",
+  "description": "Generate marketing assets with tone controls, templates, and editable results—powered by OpenAI text completions.\n\nFeatures include:\n- Tone-aware outputs\n- History & clipboard actions\n- Extensible template logic\n- Real-time content editing\n- Multiple tone and style options\n- Content templates library",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-content-generator",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+  "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Tone-aware outputs",
+    "History & clipboard actions",
+    "Extensible template logic"
+  ],
+  "category": "AI",
+  "featured": true,
+  "createdAt": {
+    "$date": "2024-10-20T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb08"
+  },
+  "title": "Smart Analytics Dashboard",
+  "slug": "smart-analytics-dashboard",
+  "summary": "Realtime analytics dashboard with AI insights, KPI cards, and Recharts visualizations integrated with OpenAI.",
+  "description": "Real-time style metrics, Recharts visualizations, and AI-driven insights ready to plug into business data.\n\nKey features:\n- KPI grid\n- AI insights panel\n- Responsive Recharts\n- Real-time data visualization\n- Predictive analytics\n- Customizable dashboards",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/smart-analytics-dashboard",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "Recharts",
+    "OpenAI"
+  ],
+  "features": [
+    "KPI grid",
+    "AI insights panel",
+    "Responsive Recharts",
+    "Real-time visualization"
+  ],
+  "category": "Analytics",
+  "featured": true,
+  "createdAt": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb09"
+  },
+  "title": "E-Commerce AI Assistant",
+  "slug": "ecommerce-ai-assistant",
+  "summary": "Conversational product finder that filters a catalog and narrates recommendations with OpenAI.",
+  "description": "Conversational product discovery with natural language filtering and intelligent recommendations.\n\nFeatures:\n- Chat UX\n- Intent filters\n- Catalog search\n- Product search and discovery\n- Personalized recommendations\n- 24/7 customer support\n- Natural language processing",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ecommerce-ai-assistant",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Chat UX",
+    "Intent filters",
+    "Catalog search",
+    "Personalized recommendations"
+  ],
+  "category": "E-Commerce",
+  "featured": true,
+  "createdAt": {
+    "$date": "2024-10-10T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-10T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb0a"
+  },
+  "title": "Document Analysis",
+  "slug": "document-analysis",
+  "summary": "Upload resumes or PDFs to receive AI summaries, key findings, and actionable recommendations.",
+  "description": "Upload resumes or PDFs and receive structured summaries, key takeaways, and AI recommendations instantly.\n\nCapabilities:\n- File uploads\n- AI summarization\n- Actionable insights\n- Key information extraction\n- Content summarization\n- Legal document analysis",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/document-analysis",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "File uploads",
+    "AI summarization",
+    "Key extraction",
+    "Actionable insights"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-10-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-05T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb0b"
+  },
+  "title": "AI Support Inbox",
+  "slug": "ai-support-inbox",
+  "summary": "Monitor tickets and generate AI-assisted replies enriched with knowledge base context.",
+  "description": "Triage customer tickets, generate AI draft responses, and insert knowledge base snippets with one click.\n\nFeatures:\n- Ticket sidebar\n- Message threads\n- Draft replies\n- AI-powered chatbot\n- Ticket management system\n- Knowledge base integration\n- Automated response suggestions",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-support-inbox",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Ticket sidebar",
+    "Message threads",
+    "Draft replies",
+    "Knowledge base"
+  ],
+  "category": "Business",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-09-28T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69077862332d1e676e44bb0c"
+  },
+  "title": "AI Asset Studio",
+  "slug": "ai-asset-studio",
+  "summary": "Generate branded imagery with AI using style presets, prompt history, and instant downloads.",
+  "description": "Create branded imagery on demand with prompt history, style presets, and download-ready assets.\n\nFeatures:\n- Prompting UI\n- Image gallery\n- Style presets\n- Text-to-image generation\n- Image editing capabilities\n- Style variations\n- High-resolution output",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-asset-studio",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI Images",
+    "MUI"
+  ],
+  "features": [
+    "Prompting UI",
+    "Image gallery",
+    "Style presets",
+    "High-resolution output"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68077866f4f18bcdbe27c4c2"
+  },
+  "title": "AI Meeting Assistant",
+  "slug": "ai-meeting-assistant",
+  "summary": "Process meeting transcripts and extract action items, summaries, and follow-up tasks with AI-powered analysis.",
+  "description": "AI Meeting Assistant transforms meeting transcripts into actionable insights. Upload or paste meeting transcripts to automatically extract key information, action items, participants, and decisions.\n\nFeatures:\n- Meeting transcript processing\n- Action item extraction with owners and due dates\n- Key decision identification\n- Participant tracking and role identification\n- Meeting summary generation\n- Follow-up task creation\n- Support for multiple meeting types (team meetings, client meetings, planning sessions)",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-meeting-assistant",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Transcript processing",
+    "Action item extraction",
+    "Participant tracking",
+    "Meeting summaries"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68077866f4f18bcdbe27c4c3"
+  },
+  "title": "AI SEO Content Optimizer",
+  "slug": "ai-seo-optimizer",
+  "summary": "Optimize content for search engines with AI-powered keyword analysis, meta tag generation, and actionable SEO recommendations.",
+  "description": "AI SEO Content Optimizer helps businesses improve their search engine visibility through intelligent content analysis and optimization. Paste your content to receive comprehensive SEO insights and recommendations.\n\nFeatures:\n- Content SEO scoring\n- Keyword optimization analysis\n- Meta title and description generation\n- SEO recommendations and best practices\n- Content improvement suggestions with before/after examples\n- Alternative title tag suggestions\n- Keyword density analysis\n- SERP optimization insights",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-seo-optimizer",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "SEO scoring",
+    "Keyword optimization",
+    "Meta tag generation",
+    "Content recommendations"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68077866f4f18bcdbe27c4c4"
+  },
+  "title": "AI Invoice & Expense Assistant",
+  "slug": "ai-invoice-assistant",
+  "summary": "Generate professional invoices, automatically categorize expenses, and get financial summaries tailored for small businesses and freelancers.",
+  "description": "AI Invoice & Expense Assistant streamlines financial management for small businesses and freelancers. Generate professional invoices, categorize expenses automatically, and gain insights into your business finances.\n\nFeatures:\n- Professional invoice generation with itemized billing\n- Automatic invoice calculations (subtotal, tax, total)\n- Customizable payment terms and tax rates\n- Expense categorization from plain text\n- Financial summary generation\n- Expense tracking and insights\n- Net income calculations\n- Top expense category analysis\n- AI-powered financial recommendations",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-invoice-assistant",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Invoice generation",
+    "Expense categorization",
+    "Financial summaries",
+    "Tax calculations"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68077866f4f18bcdbe27c4c5"
+  },
+  "title": "AI Proposal Generator",
+  "slug": "ai-proposal-generator",
+  "summary": "Create winning client proposals and accurate quotes with AI assistance. Generate professional business documents tailored to your clients' needs.",
+  "description": "AI Proposal Generator helps freelancers and creative professionals win more client work by generating comprehensive proposals and accurate quotes. Create professional business documents in minutes.\n\nFeatures:\n- Comprehensive proposal generation with executive summaries\n- Multiple proposal sections (overview, scope, timeline, investment)\n- Itemized pricing breakdowns\n- Professional quote generation\n- Customizable payment terms\n- Project timeline suggestions\n- Contract template customization\n- Discount and tax calculations\n- Quote expiration tracking\n- Professional document formatting",
+  "demoUrl": "https://showcase.sotowebstudios.com/demos/ai-proposal-generator",
+  "githubUrl": "#",
+  "thumbnail": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+  "techStack": [
+    "Next.js",
+    "OpenAI",
+    "MUI"
+  ],
+  "features": [
+    "Proposal generation",
+    "Pricing breakdowns",
+    "Quote creation",
+    "Timeline suggestions"
+  ],
+  "category": "AI",
+  "featured": false,
+  "createdAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-19T00:00:00.000Z"
+  }
+}]
