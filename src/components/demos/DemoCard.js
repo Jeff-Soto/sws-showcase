@@ -41,6 +41,112 @@ export default function DemoCard({ demo }) {
         </Typography>
       </Stack>
 
+      {/* Business Value Section */}
+      {demo.businessProblem && (
+        <Box
+          sx={{
+            p: 2,
+            borderRadius: 2,
+            backgroundColor: "rgba(201,160,63,0.08)",
+            border: "1px solid rgba(201,160,63,0.2)",
+          }}
+        >
+          <Typography
+            variant="body2"
+            sx={{
+              color: "primary.light",
+              fontWeight: 500,
+              mb: 1,
+              fontSize: "0.75rem",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+            }}
+          >
+            Business Value
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5, fontSize: "0.875rem" }}>
+            {demo.businessProblem}
+          </Typography>
+          {demo.keyBenefits && demo.keyBenefits.length > 0 && (
+            <Stack spacing={0.5}>
+              {demo.keyBenefits.slice(0, 2).map((benefit, idx) => (
+                <Box
+                  key={idx}
+                  sx={{
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: 1,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: 6,
+                      height: 6,
+                      borderRadius: "50%",
+                      background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
+                      mt: "0.4em",
+                      flexShrink: 0,
+                    }}
+                  />
+                  <Typography 
+                    variant="body2" 
+                    sx={{ 
+                      color: "text.secondary", 
+                      fontSize: "0.8125rem",
+                      lineHeight: 1.5,
+                      flex: 1,
+                      pt: 0,
+                      mt: 0,
+                    }}
+                  >
+                    {benefit}
+                  </Typography>
+                </Box>
+              ))}
+            </Stack>
+          )}
+        </Box>
+      )}
+
+      {/* Target Audience */}
+      {demo.targetAudience && demo.targetAudience.length > 0 && (
+        <Stack spacing={1}>
+          <Typography
+            variant="caption"
+            sx={{
+              color: "text.secondary",
+              fontSize: "0.7rem",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              fontWeight: 600,
+            }}
+          >
+            Perfect for
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 0.75,
+            }}
+          >
+            {demo.targetAudience.slice(0, 4).map((audience) => (
+              <Chip
+                key={audience}
+                label={audience}
+                size="small"
+                sx={{
+                  backgroundColor: "rgba(201,160,63,0.08)",
+                  border: "1px solid rgba(201,160,63,0.2)",
+                  fontSize: "0.7rem",
+                  height: 20,
+                }}
+              />
+            ))}
+          </Box>
+        </Stack>
+      )}
+
       <Stack direction="row" spacing={1} flexWrap="wrap">
         {demo.tech.map((tech) => (
           <Chip
@@ -57,19 +163,37 @@ export default function DemoCard({ demo }) {
 
       <Stack spacing={1}>
         {demo.highlights.map((item) => (
-          <Stack key={item} direction="row" spacing={1} alignItems="center">
+          <Box
+            key={item}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              gap: 1,
+            }}
+          >
             <Box
               sx={{
                 width: 8,
                 height: 8,
                 borderRadius: "50%",
                 background: "linear-gradient(135deg, #C9A03F 0%, #D4B05E 100%)",
+                mt: "0.4em",
+                flexShrink: 0,
               }}
             />
-            <Typography variant="body2" color="text.secondary">
+            <Typography 
+              variant="body2" 
+              color="text.secondary"
+              sx={{ 
+                lineHeight: 1.5,
+                flex: 1,
+                pt: 0,
+                mt: 0,
+              }}
+            >
               {item}
             </Typography>
-          </Stack>
+          </Box>
         ))}
       </Stack>
 

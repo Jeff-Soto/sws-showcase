@@ -1,4 +1,5 @@
 import SupportInboxClient from "./SupportInboxClient";
+import { getDemoBySlug } from "@/lib/projects";
 
 export const metadata = {
   title: "AI Support Inbox | Soto Web Studios Showcase",
@@ -6,7 +7,8 @@ export const metadata = {
     "Monitor tickets and generate AI-assisted replies enriched with knowledge base context.",
 };
 
-export default function AISupportInboxPage() {
-  return <SupportInboxClient />;
+export default async function AISupportInboxPage() {
+  const demo = await getDemoBySlug("ai-support-inbox");
+  return <SupportInboxClient demo={demo} />;
 }
 

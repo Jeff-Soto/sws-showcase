@@ -29,6 +29,7 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 
 const contentTypeOptions = [
   { value: "blog-post", label: "Blog Post" },
@@ -38,7 +39,7 @@ const contentTypeOptions = [
   { value: "article", label: "Article" },
 ];
 
-export default function SeoOptimizerClient() {
+export default function SeoOptimizerClient({ demo }) {
   const [content, setContent] = useState("");
   const [targetKeyword, setTargetKeyword] = useState("");
   const [contentType, setContentType] = useState("web-page");
@@ -101,6 +102,8 @@ export default function SeoOptimizerClient() {
         title="AI SEO Content Optimizer"
         subtitle="Analyze your content and get AI-powered SEO recommendations, optimized meta tags, keyword suggestions, and actionable improvements."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 6 }}>

@@ -16,6 +16,7 @@ import InsightsPanel from "@/components/analytics/InsightsPanel";
 import PerformanceTable from "@/components/analytics/PerformanceTable";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 import { analyticsPresets } from "@/data/analytics";
 
 const rangeOptions = Object.entries(analyticsPresets).map(([key, value]) => ({
@@ -23,7 +24,7 @@ const rangeOptions = Object.entries(analyticsPresets).map(([key, value]) => ({
   label: value.label,
 }));
 
-export default function AnalyticsDashboardClient() {
+export default function AnalyticsDashboardClient({ demo }) {
   const [range, setRange] = useState("last-7-days");
   const [insightOffset, setInsightOffset] = useState(0);
 
@@ -60,6 +61,8 @@ export default function AnalyticsDashboardClient() {
           />
         }
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Paper
         elevation={0}

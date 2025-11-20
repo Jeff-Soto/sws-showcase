@@ -36,6 +36,7 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 
 function TabPanel({ children, value, index }) {
   return (
@@ -45,7 +46,7 @@ function TabPanel({ children, value, index }) {
   );
 }
 
-export default function InvoiceAssistantClient() {
+export default function InvoiceAssistantClient({ demo }) {
   const [tab, setTab] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -213,6 +214,8 @@ export default function InvoiceAssistantClient() {
         title="AI Invoice & Expense Assistant"
         subtitle="Generate professional invoices, automatically categorize expenses, and get financial insights tailored for small businesses and freelancers."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Paper elevation={0} sx={{ border: "1px solid rgba(201,160,63,0.2)" }}>
         <Tabs value={tab} onChange={(e, v) => setTab(v)} sx={{ borderBottom: "1px solid rgba(201,160,63,0.1)" }}>

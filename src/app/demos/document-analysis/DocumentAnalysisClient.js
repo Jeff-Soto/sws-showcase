@@ -19,10 +19,11 @@ import Icon from "@mui/material/Icon";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 
 const bytesToKb = (size) => `${(size / 1024).toFixed(1)} KB`;
 
-export default function DocumentAnalysisClient() {
+export default function DocumentAnalysisClient({ demo }) {
   const [selectedFile, setSelectedFile] = useState(null);
   const [notes, setNotes] = useState("");
   const [analysis, setAnalysis] = useState(null);
@@ -160,6 +161,8 @@ export default function DocumentAnalysisClient() {
         title="Document Analysis"
         subtitle="Upload a PDF or Word document to get AI-powered summaries, key takeaways, and next-step recommendations."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 6 }}>

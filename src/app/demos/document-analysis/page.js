@@ -1,4 +1,5 @@
 import DocumentAnalysisClient from "./DocumentAnalysisClient";
+import { getDemoBySlug } from "@/lib/projects";
 
 export const metadata = {
   title: "Document Analysis Tool | Soto Web Studios Showcase",
@@ -6,7 +7,8 @@ export const metadata = {
     "Upload resumes or PDFs to receive AI summaries, key findings, and actionable recommendations.",
 };
 
-export default function DocumentAnalysisPage() {
-  return <DocumentAnalysisClient />;
+export default async function DocumentAnalysisPage() {
+  const demo = await getDemoBySlug("document-analysis");
+  return <DocumentAnalysisClient demo={demo} />;
 }
 
