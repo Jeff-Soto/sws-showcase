@@ -20,6 +20,7 @@ import SendIcon from "@mui/icons-material/Send";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 import { products } from "@/data/products";
 
 const initialMessages = [
@@ -123,7 +124,7 @@ function ProductCard({ product, onMockAction }) {
   );
 }
 
-export default function AssistantClient() {
+export default function AssistantClient({ demo }) {
   const [messages, setMessages] = useState(initialMessages);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -195,6 +196,8 @@ export default function AssistantClient() {
         title="E-Commerce AI Assistant"
         subtitle="Chat with a product specialist that understands budget, features, and intent. Recommendations are filtered from a mock catalog and narrated via OpenAI."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, lg: 8 }}>

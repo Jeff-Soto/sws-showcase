@@ -35,6 +35,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 
 function TabPanel({ children, value, index }) {
   return (
@@ -52,7 +53,7 @@ const projectTypes = [
   { value: "other", label: "Other" },
 ];
 
-export default function ProposalGeneratorClient() {
+export default function ProposalGeneratorClient({ demo }) {
   const [tab, setTab] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -198,6 +199,8 @@ export default function ProposalGeneratorClient() {
         title="AI Proposal Generator"
         subtitle="Create winning client proposals and accurate quotes with AI assistance. Generate professional business documents tailored to your clients' needs."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Paper elevation={0} sx={{ border: "1px solid rgba(201,160,63,0.2)" }}>
         <Tabs value={tab} onChange={(e, v) => setTab(v)} sx={{ borderBottom: "1px solid rgba(201,160,63,0.1)" }}>

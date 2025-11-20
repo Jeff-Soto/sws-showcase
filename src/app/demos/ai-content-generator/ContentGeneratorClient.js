@@ -24,6 +24,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 import { contentTypes, toneOptions } from "@/data/aiContentGenerator";
 
 const initialForm = {
@@ -33,7 +34,7 @@ const initialForm = {
   audience: "",
 };
 
-export default function ContentGeneratorClient() {
+export default function ContentGeneratorClient({ demo }) {
   const [form, setForm] = useState(initialForm);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -190,6 +191,8 @@ export default function ContentGeneratorClient() {
         title="AI Content Generator"
         subtitle="Select a content format, choose the tone, and describe your campaign. The AI will produce on-brand copy you can refine, save, and ship."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 6 }}>

@@ -16,11 +16,12 @@ import HistoryIcon from "@mui/icons-material/History";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 import { styleOptions } from "@/data/assetStudio";
 
 const sizeOptions = ["1024x1024", "1024x1536", "1536x1024", "auto"];
 
-export default function AssetStudioClient() {
+export default function AssetStudioClient({ demo }) {
   const [prompt, setPrompt] = useState("");
   const [style, setStyle] = useState(styleOptions[0].value);
   const [size, setSize] = useState("1024x1024");
@@ -71,6 +72,8 @@ export default function AssetStudioClient() {
         title="AI Asset Studio"
         subtitle="Generate brand-ready imagery using natural language prompts, curated style presets, and instant download links."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 5 }}>

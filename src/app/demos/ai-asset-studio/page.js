@@ -1,4 +1,5 @@
 import AssetStudioClient from "./AssetStudioClient";
+import { getDemoBySlug } from "@/lib/projects";
 
 export const metadata = {
   title: "AI Asset Studio | Soto Web Studios Showcase",
@@ -6,7 +7,8 @@ export const metadata = {
     "Generate branded imagery with AI using style presets, prompt history, and instant downloads.",
 };
 
-export default function AIAssetStudioPage() {
-  return <AssetStudioClient />;
+export default async function AIAssetStudioPage() {
+  const demo = await getDemoBySlug("ai-asset-studio");
+  return <AssetStudioClient demo={demo} />;
 }
 

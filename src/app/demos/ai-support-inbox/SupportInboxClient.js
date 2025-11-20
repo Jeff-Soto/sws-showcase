@@ -25,6 +25,7 @@ import SendIcon from "@mui/icons-material/Send";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 import { tickets } from "@/data/support";
 
 const priorityColors = {
@@ -77,7 +78,7 @@ function TicketListItem({ ticket, selected, onClick }) {
   );
 }
 
-export default function SupportInboxClient() {
+export default function SupportInboxClient({ demo }) {
   const [ticketData, setTicketData] = useState(tickets);
   const [selectedTicketId, setSelectedTicketId] = useState(tickets[0].id);
   const [draftReply, setDraftReply] = useState("");
@@ -162,6 +163,8 @@ export default function SupportInboxClient() {
         title="AI Support Inbox"
         subtitle="Manage incoming tickets, view conversation history, and let AI draft empathetic replies enriched with knowledge base snippets."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 4 }}>

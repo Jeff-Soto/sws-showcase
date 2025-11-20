@@ -28,6 +28,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import GradientButton from "@/components/common/GradientButton";
 import SectionHeader from "@/components/common/SectionHeader";
 import InfoCard from "@/components/common/InfoCard";
+import BusinessValuePanel from "@/components/common/BusinessValuePanel";
 
 const meetingTypes = [
   { value: "team-meeting", label: "Team Meeting" },
@@ -37,7 +38,7 @@ const meetingTypes = [
   { value: "other", label: "Other" },
 ];
 
-export default function MeetingAssistantClient() {
+export default function MeetingAssistantClient({ demo }) {
   const [transcript, setTranscript] = useState("");
   const [meetingType, setMeetingType] = useState("team-meeting");
   const [notes, setNotes] = useState("");
@@ -93,6 +94,8 @@ export default function MeetingAssistantClient() {
         title="AI Meeting Assistant"
         subtitle="Paste your meeting transcript and get instant summaries, action items, key decisions, and follow-up tasks extracted by AI."
       />
+
+      {demo && <BusinessValuePanel demo={demo} />}
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 6 }}>
