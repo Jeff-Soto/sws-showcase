@@ -1,10 +1,8 @@
-"use client";
-
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { demos } from "@/data/demos";
+import { getDemos } from "@/data/demos";
 import DemoCard from "@/components/demos/DemoCard";
 import GradientButton from "@/components/common/GradientButton";
 
@@ -46,7 +44,9 @@ const demoCategories = [
   },
 ];
 
-export default function DemosOverviewPage() {
+export default async function DemosOverviewPage() {
+  const demos = await getDemos();
+
   return (
     <Stack spacing={10}>
       <Box
@@ -116,17 +116,31 @@ export default function DemosOverviewPage() {
             <Grid container spacing={3}>
               {demos
                 .filter((demo) => category.slugs.includes(demo.slug))
-                .map((demo) => (
-                  <Grid
-                    size={{
-                      xs: 12,
-                      md: category.slugs.length === 1 && index < 2 ? 12 : 6,
-                    }}
-                    key={demo.slug}
-                  >
-                    <DemoCard demo={demo} />
-                  </Grid>
-                ))}
+                .map((demo, demoIndex, filteredDemos) => {
+                  const itemCount = filteredDemos.length;
+                  let mdSize = 6; // Default: 50% width
+                  
+                  if (itemCount === 1) {
+                    // 1 item: full width
+                    mdSize = 12;
+                  } else if (itemCount === 3 && demoIndex === 2) {
+                    // 3 items: first 2 at 50%, 3rd at full width
+                    mdSize = 12;
+                  }
+                  // 2 items or 4+ items: all at 50% (6 columns)
+                  
+                  return (
+                    <Grid
+                      size={{
+                        xs: 12,
+                        md: mdSize,
+                      }}
+                      key={demo.slug}
+                    >
+                      <DemoCard demo={demo} />
+                    </Grid>
+                  );
+                })}
             </Grid>
           </Box>
         ))}
