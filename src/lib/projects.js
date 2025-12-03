@@ -31,8 +31,12 @@ export async function getDemosFromDB() {
 
     const client = await clientPromise;
     
-    // Use 'sws_db' as the database name, matching the main app pattern
-    const dbName = 'sws_db';
+    // Use MONGODB_NAME environment variable for the database name
+    const dbName = process.env.MONGODB_NAME;
+    if (!dbName) {
+      console.error("MONGODB_NAME not set, cannot fetch from database");
+      return [];
+    }
     const db = client.db(dbName);
     const collection = db.collection("projects");
 
@@ -70,8 +74,12 @@ export async function getDemoBySlug(slug) {
 
     const client = await clientPromise;
     
-    // Use 'sws_db' as the database name, matching the main app pattern
-    const dbName = 'sws_db';
+    // Use MONGODB_NAME environment variable for the database name
+    const dbName = process.env.MONGODB_NAME;
+    if (!dbName) {
+      console.error("MONGODB_NAME not set, cannot fetch from database");
+      return null;
+    }
     const db = client.db(dbName);
     const collection = db.collection("projects");
 
